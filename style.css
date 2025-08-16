@@ -45,7 +45,7 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 6px;
 }
 
 .menu-cabecalho i {
@@ -214,20 +214,104 @@
 
 .competencias .competencia {
     flex: 0 1 32%;
+    ;
 }
 
 .competencias .competencia img {
     width: 100%;
-    border-radius: 20px; /* aqui! */
+    border-radius: 20px; 
 }
 
-.competencia {  
+.competencia  {  
     text-decoration: none;
     color: #fff;
     padding: 18px;
     font-weight: 500;
     border: 20px;
+    position: relative;
+    
+    overflow: hidden;
 }
 
+
+
+.competencias .competencia {
+    overflow: hidden; 
+    position: relative;
+}
+
+.competencias .competencia img {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.competencias .competencia:hover img {
+    scale: 1.15;
+}
+
+/*RODAPÉ*/
+.rodape {
+    padding: 120px 0px;
+    background-image: linear-gradient(180deg, #00315e 10%, #000825 100%);
+}
+
+
+
+.rodape ul {
+    list-style: none;   
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.rodape i {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     
-   
+
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    color: #fff;
+
+    background-color: #007ABA;
+    padding: 5px;
+    border-radius: 50%;
+
+    transition: all 0.3s ease;
+}
+
+.rodape a{
+    text-decoration: none;
+}
+
+.rodape li:hover i {
+    background-color: transparent;
+    color: #007ABA;
+}
+
+.rodape .logo img {
+    width: 159px;
+    padding: 8px;
+}
+
+    .rodape {
+            width: 100%;
+            background-color: #00315EBD;
+            color: #fff;
+            padding: 8px 150px;
+            text-align: left;
+              
+    
+
+}
+
+.rodape .lado-right {
+    text-align: right;
+    padding: 0 300px;
+     position: relative;
+    top: -110px;
+}
